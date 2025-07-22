@@ -1,0 +1,3 @@
+db_url: postgresql://rubin@usdf-prompt-processing-dev.slac.stanford.edu:5432/lsst-devl
+implementation_type: sql
+schema_name: ppdb_dm50567
