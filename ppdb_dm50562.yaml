@@ -1,0 +1,16 @@
+# Config type
+implementation_type: bigquery
+
+# PpdbSqlConfig
+db_url: postgresql://ppdb_pg_user@34.28.177.170:5432/appdb
+schema_name: ppdb_dm50562
+
+# PpdbBigQueryConfig
+directory: /sdf/home/j/jeremym/dev/DM-50563/staging-dev/dm50562
+delete_existing: True
+stage_chunk_topic: stage-chunk-topic
+batch_size: 10000
+compression_format: snappy
+bucket: ppdb-dev
+dataset: ppdb-dev-438721:ppdb_lsstcam
+prefix: data

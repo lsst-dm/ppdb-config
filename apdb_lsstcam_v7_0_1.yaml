@@ -1,0 +1,12 @@
+connection_config:
+  extra_parameters:
+    control_connection_timeout: 100
+    idle_heartbeat_interval: 0
+    idle_heartbeat_timeout: 30
+  username: apdb-prod
+contact_points: !!python/tuple
+- sdfk8sk001.sdf.slac.stanford.edu
+- sdfk8sk004.sdf.slac.stanford.edu
+enable_replica: true
+implementation_type: cassandra
+keyspace: pp_apdb_lsstcam
