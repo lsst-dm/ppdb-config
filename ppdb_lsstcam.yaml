@@ -1,3 +1,10 @@
-db_url: postgresql://rubin@usdf-prompt-processing-dev.slac.stanford.edu:5432/lsst-devl
-implementation_type: sql
-schema_name: ppdb_lsstcam
+bucket_name: ppdb-dev
+dataset_id: ppdb_lsstcam
+delete_existing_dirs: true
+implementation_type: bigquery
+object_prefix: data/chunks
+project_id: ppdb-dev-438721
+replication_dir: /sdf/scratch/rubin/ppdb/data/ppdb_lsstcam
+sql:
+  db_url: postgresql://ppdb_pg_user@34.28.177.170:5432/appdb
+  schema_name: ppdb_lsstcam
