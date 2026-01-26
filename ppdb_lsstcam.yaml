@@ -1,10 +1,10 @@
-bucket_name: ppdb-dev
+bucket_name: ppdb-prod
 dataset_id: ppdb_lsstcam
 delete_existing_dirs: true
 implementation_type: bigquery
 object_prefix: data/chunks
-project_id: ppdb-dev-438721
+project_id: ppdb-prod
 replication_dir: /sdf/scratch/rubin/ppdb/data/ppdb_lsstcam
 sql:
-  db_url: postgresql://ppdb_pg_user@34.28.177.170:5432/appdb
+  db_url: postgresql://ppdb-user@35.238.206.26:5432/ppdb-chunk-tracking
   schema_name: ppdb_lsstcam
