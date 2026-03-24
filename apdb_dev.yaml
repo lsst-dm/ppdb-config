@@ -1,0 +1,4 @@
+db_url: postgresql://rubin@usdf-prompt-db-dev.sdf.slac.stanford.edu:5432/lsst-devl
+enable_replica: true
+implementation_type: sql
+namespace: apdb_dev
